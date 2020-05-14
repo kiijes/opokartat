@@ -18,9 +18,9 @@ export class MapContentComponent implements OnInit {
   subIndex: number;
 
   constructor(private route: ActivatedRoute, private pagesService: PagesService) {
-    this.pagesService.getPages().subscribe(data=>{
+    this.pagesService.getPages().subscribe((data: any[])=>{
           this.pageData = data;
-          this.pageContent.push(this.pageData);
+          this.pageContent = data;
       });
     }
 

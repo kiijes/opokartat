@@ -14,9 +14,10 @@ export class AppComponent {
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer
     ) {
+      // Vaihda JAMK-logoon
       this.matIconRegistry.addSvgIcon(
         "jamkhome",
-        this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icons/jamkhome.svg")
+        this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icons/jamk_fi_tunnus_sininen.svg")
       );
       this.matIconRegistry.addSvgIcon(
         "jkl",

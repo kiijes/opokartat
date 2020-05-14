@@ -15,10 +15,11 @@ export class MapStartComponent implements OnInit {
   selectedContentName;
 
 	constructor(private pagesService: PagesService) {
-    this.pagesService.getPages().subscribe(data=>{
+    this.pagesService.getPages().subscribe((data: any[])=>{
+          console.log(data);
           this.pageData = data;
 
-          this.linkNameList.push(this.pageData);
+          this.linkNameList = data;
       });
 
 	}
