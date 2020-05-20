@@ -25,13 +25,13 @@
         <p *ngIf="pageContent.length > 0 && !pageContent[pageIndex]?.pageContent[subIndex]?.supportSources" class='subTitleText'> {{ pageContent[pageIndex]?.subtitle }} </p>
       <ul class='widerList' *ngIf="pageContent">
         <p class="subTitleText"> {{ pageContent[pageIndex]?.pageContent[subIndex]?.descriptionTitle }}  </p>
-        <p class="subTitleText explIcons">  <mat-icon svgIcon="jamkhome" class="explIcon"> </mat-icon> JAMKin palvelut 
+        <p class="subTitleText explIcons">  <mat-icon svgIcon="jamkhome" class="explIcon jamkIcon"> </mat-icon> JAMKin palvelut 
                                             <mat-icon svgIcon="jkl" class="explIcon"></mat-icon> Jyväskylän palvelut
                                             <mat-icon svgIcon="online" class="explIcon"></mat-icon> Online </p>
         <!-- Kartan sivujen sisältö -->                          
         <li class='styledList widerListItem' *ngFor='let source of pageContent[pageIndex]?.pageContent[subIndex]?.supportSources; index as i'>
           <div class="indent">
-            <mat-icon *ngIf="source.icon?.includes('jamk')" svgIcon="jamkhome" hover="buu" class="listIcons"></mat-icon>
+            <mat-icon *ngIf="source.icon?.includes('jamk')" svgIcon="jamkhome" hover="buu" class="listIcons jamkIcon"></mat-icon>
             <mat-icon *ngIf="source.icon?.includes('jkl')" svgIcon="jkl" class="listIcons"></mat-icon>
             <mat-icon *ngIf="source.icon?.includes('web')" svgIcon="online" class="listIcons"></mat-icon>
             <!-- Nimi -->
