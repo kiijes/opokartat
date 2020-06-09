@@ -9,7 +9,7 @@ export class PagesService {
 
   pageContentName: any;
   subContentName: any;
-  private url = 'http://localhost:3000/api/v1/pages';
+  private url = 'https://tiko.jamk.fi/api/v1/pages';
 
   constructor(
     private http: HttpClient
