@@ -1,12 +1,12 @@
 <div id='linkContainer2'>
   <div class='row rowContainer'>
     <!-- Etusivun tekstit ja kuva -->
-    <div class='col-6' *ngIf="!pageContent.length === 0 || !pageContent[pageIndex]?.pageContent">
+    <div class='col-6' *ngIf="pageContent.length !== 0 || !pageContent[pageIndex]?.pageContent">
           <p class='frontPageText'>Tästä kartastosta löydät tietoa tahoista, joihin voit olla yhteyksissä, jos sinulla on haasteita opintoihisi ja/tai elämäntilanteeseesi liittyen. </p> 
           <p class='frontPageText'>Ohjauksen kartastoon on koottu JAMKin tarjoamia palveluja, Jyväskylän alueen palveluja sekä verkkopalveluja. Ota rohkeasti yhteyttä ja hae apua tilanteeseesi! </p>
           <p class='frontPageText'>JAMKin opiskelua tukeviin opintojaksoihin ja ryhmiin pääset tutustumaan täällä: <a href='https://opinto-oppaat.jamk.fi/fi/opinto-opas-amk/opintojen-tueksi/opiskelua-tukevat-opintojaksot-ja-ryhmat/'>https://opinto-oppaat.jamk.fi/fi/opinto-opas-amk/opintojen-tueksi/opiskelua-tukevat-opintojaksot-ja-ryhmat/</a></p>
     </div>
-    <div class='col-6 picContainer' *ngIf="!pageContent.length === 0 || !pageContent[pageIndex]?.pageContent">
+    <div class='col-6 picContainer' *ngIf="pageContent.length !== 0 || !pageContent[pageIndex]?.pageContent">
         <img src='./assets/pidetaan_huolta_pupu_270x320.png' alt="Pidetään huolta pupu">
     </div>
 
